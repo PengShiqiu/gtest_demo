@@ -25,6 +25,8 @@ TEST(HelloTest, Sub) {
 }
 
 int main(int argc, char** argv) {
+  // 重复10次测试
+  testing::GTEST_FLAG(repeat) = 10;
   // 初始化gtest
   testing::InitGoogleTest(&argc, argv);
   // 运行所有测试用例
